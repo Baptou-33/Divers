@@ -51,6 +51,9 @@ def Insertion_sort():
 
 
 
+#All the actions you can do
+Actions = ['RNG()', 'run("Bauble_sort()")', 'run("Selection_sort()")', 'run("Insertion_sort()")']
+
 #Check if the List is realy sorted
 def Check_list(L):
     for check in range(len(L) - 1):
@@ -59,20 +62,11 @@ def Check_list(L):
             break
     return True
 
-
-
-#All the actions you can do
-Actions = ['RNG()', 'run("Bauble_sort()")', 'run("Selection_sort()")', 'run("Insertion_sort()")']
-
-
-
 #Test all the algorithms
 def All():
     print("")
     for z in range(1, len(Actions)):
         eval(Actions[z])
-
-
 
 #Take the runnig time of the algorithm
 def run(algorithm):
